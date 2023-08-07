@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Step 2.0</title>
+        <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1133413312399425677/1133413428363546765/logotext.png">
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="logotext.png" alt="no image"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="bi bi-x" onclick="HideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about us.html">About</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list" onclick="ShowMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1><b>WELCOME</b> TO STEP 2.0</h1>
+                <p>Dedicated to environmental conservation and sustainability, we are one of the oldest clubs at MIS. Since our establishment in 2012,<br>
+                    we have empowered over 800 students to actively participate in various eco-friendly events and initiatives. <br>
+                    Led by our esteemed club coordinator, Ms. Neeraj Soni Sharma, our mission is to inspire change, promote scientific knowledge, and foster a greener future.<br>
+                </p>
+                <a href="login.html" class="rain">Join Us Now</a>
+            </div>
+        </section>
+
+<!---- Events ----->
+
+<section class="events">
+    <h1> Events </h1>
+    <p> Around 800 students have actively participated in various events organised by our club. </p>
+
+    <div class="row">
+        <div class="events-col">
+            <h3> Clean Campus Campaign </h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare aenean euismod elementum nisi quis eleifend. Id venenatis a condimentum vitae sapien pellentesque habitant. </p>
+        </div>
+        <div class="events-col">
+            <h3> Clean Class Campaign </h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare aenean euismod elementum nisi quis eleifend. Id venenatis a condimentum vitae sapien pellentesque habitant. </p>
+        </div>
+        <div class="events-col">
+            <h3> Mensural Hygiene Day </h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare aenean euismod elementum nisi quis eleifend. Id venenatis a condimentum vitae sapien pellentesque habitant. </p>
+        </div>
+    </div>
+</section>
+<!---- Class ----->
+<section class="class">
+    <h1> Grades Available </h1>
+    <p> Our club members are spread across the following grades! </p>
+    <div class="row">
+        <div class="class-col">
+            <img src="images/class vii.png" alt="no image">
+            <div class="layer">
+                <h3> Class VII </h3>
+            </div>
+        </div>
+        <div class="class-col">
+            <img src="images/Class viii.png" alt="no image">
+            <div class="layer">
+                <h3> Class VIII </h3>
+            </div>
+        </div>
+        <div class="class-col">
+            <img src="images/CLASS IX.png" alt="no image">
+            <div class="layer">
+                <h3> Class IX </h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="class-col">
+            <img src="images/CLASS X.png" alt="no image">
+            <div class="layer">
+                <h3> Class X </h3>
+            </div>
+        </div>
+        <div class="class-col">
+            <img src="images/CLASS XI.png" alt="no image">
+            <div class="layer">
+                <h3> Class XI </h3>
+            </div>
+        </div>
+        <div class="class-col">
+            <img src="images/Class XII.png" alt="no image">
+            <div class="layer">
+                <h3> Class XII </h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---- Footer ----->
+<section class="footer">
+    <h4> About Us </h4>
+    <p> STEP 2.0 is one of the oldest club in Modern Indian School. It was established in 2012,<br>
+        originally named as science-eco club but later on, It was renamed by the principal as save the earth program (STEP 2.0). </p>
+        <div class="icons">
+            <a href="https://www.facebook.com/step2.0mis" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/mis_step2.0/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://discord.gg/QsW9QVhHdC" target="_blank"><i class="bi bi-discord"></i></a>
+        </div>
+</section>
+
+
+
+
+        <!------Javascript for Toggling Menu ------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+
+            function ShowMenu(){
+                navLinks.style.right = "0";
+            }
+            function HideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>

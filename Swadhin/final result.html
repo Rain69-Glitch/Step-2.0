@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Voting</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Image Voting</h1>
+
+  <div class="image-container">
+    <img id="image1" src="image1.PNG" alt="Image 1">
+    <img id="image2" src="image2.PNG" alt="Image 2">
+  </div>
+
+  <div class="leaderboard">
+    <h2>Leaderboard</h2>
+    <ol id="ranking">
+      <!-- Placeholder for leaderboard entries -->
+    </ol>
+  </div>
+
+  <!-- Script For Image Selection -->
+  <script>
+    // JavaScript code for handling image selection and voting
+    var image1 = document.getElementById('image1');
+    var image2 = document.getElementById('image2');
+    var ranking = document.getElementById('ranking');
+
+    var votes = {
+      image1: 0,
+      image2: 0,
+    };
+
+    var hasVoted = false;
+
+    image1.addEventListener('click', function() {
+      if (!hasVoted) {
+        votes.image1++;
+        updateLeaderboard();
+        hasVoted = true;
+        changeImages();
+      }
+    });
+
+    image2.addEventListener('click', function() {
+      if (!hasVoted) {
+        votes.image2++;
+        updateLeaderboard();
+        hasVoted = true;
+        changeImages();
+      }
+    });
+
+    function updateLeaderboard() {
+      ranking.innerHTML = '';
+
+      // Sort images based on votes
+      var sortedImages = Object.keys(votes).sort(function(a, b) {
+        return votes[b] - votes[a];
+      });
+
+      // Generate leaderboard entries
+      for (var i = 0; i < sortedImages.length; i++) {
+        var imageId = sortedImages[i];
+        var listItem = document.createElement('li');
+        var image = document.createElement('img');
+        image.src = imageId + '.jpg';
+        image.alt = 'Image ' + imageId.substring(5);
+        listItem.appendChild(image);
+        listItem.innerHTML += ' - Votes: ' + votes[imageId];
+        ranking.appendChild(listItem);
+      }
+    }
+
+    function changeImages() {
+      var randomIndex1, randomIndex2;
+
+      do {
+        randomIndex1 = Math.floor(Math.random() * 2) + 1;
+        randomIndex2 = Math.floor(Math.random() * 2) + 1;
+      } while (randomIndex1 === randomIndex2);
+
+      image1.src = 'image' + randomIndex1 + '.jpg';
+      image2.src = 'image' + randomIndex2 + '.jpg';
+    }
+  </script>
+</body>
+</html>
