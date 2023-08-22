@@ -21,7 +21,7 @@
                         <li><a href="home.html">Home</a></li>
                         <li><a href="about us.html">About</a></li>
                         <li><a href="innovation.html">Innovation</a></li>
-                        <li><a href="">Notice</a></li>
+                        <li><a href="Notice.html">Notice</a></li>
                         <li><a href="forum.html">Forum</a></li>
                     </ul>
                 </div>
@@ -211,7 +211,7 @@
                     <div class="footer-col">
                         <h4>Club</h4>
                         <ul>
-                            <li><a href="about us.css">About Us</a></li>
+                            <li><a href="about us.html">About Us</a></li>
                             <li><a href="#">Operating Comittee members</a></li>
                             <li><a href="#">Club members</a></li>
                             <li><a href="#">Affiliate clubs</a></li>
@@ -222,18 +222,14 @@
                         <ul>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">order status</a></li>
-                            <li><a href="#">payment options</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h4>School Information</h4>
                         <ul>
                             <li><a href="https://www.misktm.edu.np/">School Site</a></li>
-                            <li><a href="#">info@misktm.edu.np</a></li>
-                            <li><a href="#">principal@misktm.edu.np</a></li>
-                            <li><a href="#">Affiliate clubs</a></li>
+                            <li><a href="mailto:info@misktm.edu.np">Email PA to Principal </a></li>
+                            <li><a href="mailto:principal@misktm.edu.np">Email to The Principal</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -248,6 +244,20 @@
             </div>
         </footer>
 
-        <script src="lightbox-plus-jquery.js"></script>
+        
+
+        <!------Javascript for Toggling Menu ------>
+        <script src="lightbox-plus-jquery.js">
+
+            var navLinks = document.getElementById("navLinks")
+
+            function ShowMenu(){
+                navLinks.style.right = "0";
+            }
+            function HideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
     </body>
 </html>
