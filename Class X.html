@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Step 2.0</title>
+        <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1133413312399425677/1133413428363546765/logotext.png">
+        <link rel="stylesheet" href="Class X.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="logotext.png" alt="no image"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="bi bi-x" onclick="HideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about us.html">About</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="Notice.html">Notice</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list" onclick="ShowMenu()"></i>
+            </nav>
+        </section>
+        <!---- Main Columns ----->
+        <section class="class">
+            <h1> <b>Section</b> Available </h1>
+            <p> Innovations are spread across the following Sections! </p>
+            <div class="row">
+                <div class="class-col"><a href="XA.html">
+                     <img src="images/classes/GradeX/X A.png" alt="no image">
+                    <div class="layer">
+                        <h3> X 'A' </h3>
+                    </div>
+                </a>
+                </div>
+                <div class="class-col"><a href="XB.html">
+                    <img src="images/classes/GradeX/X B.png" alt="no image">
+                    <div class="layer">
+                        <h3> X 'B' </h3>
+                    </div>
+                </a>
+                </div>
+                <div class="class-col"> <a href="XC.html">
+                    <img src="images/classes/GradeX/X C.png" alt="no image">
+                    <div class="layer">
+                        <h3> X 'C' </h3>
+                    </div>
+                </a>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="class-col"><a href="XD.html">
+                    <img src="images/classes/GradeX/X D.png" alt="no image">
+                    <div class="layer">
+                        <h3> X 'D' </h3>
+                    </div>
+                </a>
+                </div>
+                <div class="class-col"><a href="XE.html">
+                    <img src="images/classes/GradeX/X E.png" alt="no image">
+                    <div class="layer">
+                        <h3> X 'E' </h3>
+                    </div>
+                </a>
+                </div>
+                <div class="class-col"><a href="XF.html">
+                    <img src="images/classes/GradeX/X F.png" alt="no image">
+                    <div class="layer">
+                        <h3> X 'F' </h3>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+<!---- Footer ----->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Club</h4>
+                <ul>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="#">Operating Comittee members</a></li>
+                    <li><a href="#">Club members</a></li>
+                    <li><a href="#">Affiliate clubs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>School Information</h4>
+                <ul>
+                    <li><a href="https://www.misktm.edu.np/">School Site</a></li>
+                    <li><a href="mailto:info@misktm.edu.np">Email PA to Principal </a></li>
+                    <li><a href="mailto:principal@misktm.edu.np">Email to The Principal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/step2.0mis" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://discord.gg/SjXUpCgxhu" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/mis_step2.0/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+        <!------Javascript for Toggling Menu ------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+
+            function ShowMenu(){
+                navLinks.style.right = "0";
+            }
+            function HideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
